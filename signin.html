@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signin</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/signin.css">
+</head>
+<body  class="bg" style="background-image: url('image/13.jpg')";>
+		<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- <a class="navbar-brand" href=""><img src="" alt="Logo"></a> -->
+			</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+      			    <ul class="nav navbar-nav">
+	      				<li><a href="index.html"><img src="" alt="logo"></a></li>
+	       				<li><a href="">Deals</a></li>
+	      				<li><a href="">Category</a></li>
+	      				<li><a href="">FAQ</a></li>
+	      				<li><a href="">About us</a></li>
+	         		    <li><a href="">Contact us</a></li>
+         			</ul>
+         			<ul class="nav navbar-nav navbar-right">
+         				<li><a href="signup.html" ><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+         				<li class="active"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Signin</a></li>
+         				<li><a href="#"><span class="glyphicon glyphicon-book"></span> Create your Business</a></li>
+         			</ul>
+         		</div>
+        </div> 		
+	</nav>
+
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"></div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<!-- Login Form Start -->
+				<form class="form-container" method="POST" action="signinAction.php">
+					<center><h1>Sign in</h1></center>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1"><span class="glyphicon glyphicon-send"></span> Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" name="u_email" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1"><span class="glyphicon glyphicon-lock"></span> Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" name="u_pass" placeholder="Password">
+				  </div>
+				  
+				  <div class="checkbox">
+				    <label>
+				      <input type="checkbox"> Remember me
+				    </label>
+				  </div>
+				  <button type="submit" name="login" class="btn btn-success btn-block">Submit</button>
+				</form>
+				<!-- Login Form End -->
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12""></div>
+		</div>
+	</div>
+</body>
+</html>
